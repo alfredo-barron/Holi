@@ -54,7 +54,6 @@ ddsmoothmenu.init({
                     <ul>
 						<li><a href="ladies.php">Damas</a></li>
                         <li><a href="mens.php">Caballeros</a></li>
-                        <li><span class="bottom"><a href="http://es.photohq.com" title="Haga clic aquí para abrir"  target="_blank"><img src="images/templatemo_menu_bottom.png" alt="Haga clic aquí para abrir from es.photohq.com" title="Haga clic aquí para abrir" /></a></span></li>
                     </ul>
                 </li>
                 <li><a href="about.php"><span></span>Diseños</a>
@@ -69,8 +68,6 @@ ddsmoothmenu.init({
 				</li>
 				<li><a href="blog.php">Compras</a></li>
 				<li><a href="contact.php">Contacto</a></li>
-                 <div align="center"> <a href="./blog.php" class="carrito" title="Ver carrito de compras">
-                <img src="./imagenes/carrito.png"></a></div>
             </ul>
             <br style="clear: left" />
         </div> <!-- end of menu -->
@@ -87,20 +84,20 @@ ddsmoothmenu.init({
             <p>Si tienes alguna consulta para hacernos, o quieres dejarnos algún comentario o sugerencia, te invitamos a hacerlo a través del siguiente formulario:</p>
             <div id="contact_form">
 				<form method="post" name="contact" action="#">
-					
+
 					<label for="author">Nombre:</label> <input type="text" id="author" name="author" class="required input_field" />
 					<div class="cleaner h10"></div>
-													
+
 					<label for="email">E-mail:</label> <input type="text" class="validate-email required input_field" name="email" id="email" />
 
 					<div class="cleaner h10"></div>
-											
-					<label for="subject">Tema:</label> <input type="text" class="validate-subject required input_field" name="subject" id="subject"/>				               
+
+					<label for="subject">Tema:</label> <input type="text" class="validate-subject required input_field" name="subject" id="subject"/>
 					<div class="cleaner h10"></div>
-							
+
 					<label for="text">Mensaje:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
-					<div class="cleaner h10"></div>				
-												
+					<div class="cleaner h10"></div>
+
 					<input type="submit" value="Enviar" id="submit" name="submit" class="submit_btn float_l" />
 					<input type="reset" value="Limpiar" id="reset" name="reset" class="submit_btn float_r" />
 
@@ -132,11 +129,11 @@ ddsmoothmenu.init({
         <a href="#"><img src="images/youtube.png" title="Youtube" alt="Youtube"/></a>
         <a href="#"><img src="images/feed.png" title="RSS" alt="RSS"/></a>
 	</div>
-	
+
       <div class="col col_32 copyright no_margin_righ">
         Copyright © 2013 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
     </div>
-	
+
     <div class="cleaner"></div>
 </div> <!-- end of footer -->
 

@@ -19,8 +19,9 @@
                         $nombre="";
                         $precio=0;
                         $imagen="";
-                        $re=mysql_query("select * from productos where id=".$_GET['id']);
-                        while ($f=mysql_fetch_array($re)) {
+                        $query = "SELECT * FROM productos WHERE id=".$_GET['id'];
+                        $result = pg_query($conn,$query);
+                        while ($f=pg_fetch_array($result)){
                             $nombre=$f['nombre'];
                             $precio=$f['precio'];
                             $imagen=$f['imagen'];
@@ -45,8 +46,9 @@
             $nombre="";
             $precio=0;
             $imagen="";
-            $re=mysql_query("select * from productos where id=".$_GET['id']);
-            while ($f=mysql_fetch_array($re)) {
+            $query = "SELECT * FROM productos WHERE id=".$_GET['id'];
+            $result = pg_query($conn,$query);
+            while ($f=pg_fetch_array($result)){
                 $nombre=$f['nombre'];
                 $precio=$f['precio'];
                 $imagen=$f['imagen'];
@@ -118,7 +120,6 @@ ddsmoothmenu.init({
                     <ul>
                         <li><a href="ladies.php">Damas</a></li>
                         <li><a href="mens.php">Caballeros</a></li>
-                        <li><span class="bottom"><a href="http://es.photohq.com" title="Haga clic aquí para abrir"  target="_blank"><img src="images/templatemo_menu_bottom.png" alt="Haga clic aquí para abrir from es.photohq.com" title="Haga clic aquí para abrir" /></a></span></li>
                     </ul>
                 </li>
                 <li><a href="about.php"><span></span>Diseños</a>
@@ -133,8 +134,6 @@ ddsmoothmenu.init({
                 </li>
                 <li><a href="blog.php">Compras</a></li>
                 <li><a href="contact.php">Contacto</a></li>
-                 <div align="center"> <a href="./blog.php" class="carrito" title="Ver carrito de compras">
-                <img src="./imagenes/carrito.png"></a></div>
             </ul>
             <br style="clear: left" />
         </div> <!-- end of menu -->
@@ -153,10 +152,10 @@ ddsmoothmenu.init({
             $total=0;
             if(isset($_SESSION['carrito'])){
             $datos=$_SESSION['carrito'];
-            
+
             $total=0;
             for($i=0;$i<count($datos);$i++){
-                
+
     ?>
                 <div class="producto">
                     <center>
@@ -165,24 +164,24 @@ ddsmoothmenu.init({
                         <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
                         <span>Cantidad: <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"></span><br>
                         <span>Subtotal:<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
-                        
+
                     </center>
                 </div>
             <?php
                 $total=($datos[$i]['Cantidad']*$datos[$i]['Precio'])+$total;
             }
-                
+
             }else{
                 echo '<center><h2>No has añadido ningun producto</h2></center>';
             }
             echo '<center><h2>Total: '.$total.'</h2></center>';
-        
-        ?>
-        <center><a href="./carrito.php">Ver catalogo</a></center>
-        
-        
 
-        
+        ?>
+      <!--  <center><a href="./carrito.php">Ver catalogo</a></center>-->
+
+
+
+
     </section>
 </div> <!-- end of main wrapper -->
 
@@ -194,11 +193,11 @@ ddsmoothmenu.init({
         <a href="#"><img src="images/youtube.png" title="Youtube" alt="Youtube"/></a>
         <a href="#"><img src="images/feed.png" title="RSS" alt="RSS"/></a>
 	</div>
-	
+
       <div class="col col_32 copyright no_margin_righ">
         Copyright © 2013 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
     </div>
-    
+
     <div class="cleaner"></div>
 </div> <!-- end of footer -->
 

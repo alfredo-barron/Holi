@@ -56,7 +56,6 @@ ddsmoothmenu.init({
                     <ul>
                         <li><a href="ladies.php">Damas</a></li>
                         <li><a href="mens.php">Caballeros</a></li>
-                        <li><span class="bottom"><a href="http://es.photohq.com" title="Haga clic aquí para abrir"  target="_blank"><img src="images/templatemo_menu_bottom.png" alt="Haga clic aquí para abrir from es.photohq.com" title="Haga clic aquí para abrir" /></a></span></li>
                     </ul>
                 </li>
                 <li><a href="about.php"><span></span>Diseños</a>
@@ -71,8 +70,6 @@ ddsmoothmenu.init({
                 </li>
                 <li><a href="blog.php">Compras</a></li>
                 <li><a href="contact.php">Contacto</a></li>
-                 <div align="center"> <a href="./blog.php" class="carrito" title="Ver carrito de compras">
-                <img src="./imagenes/carrito.png"></a></div>
             </ul>
             <br style="clear: left" />
         </div> <!-- end of menu -->
@@ -93,36 +90,36 @@ ddsmoothmenu.init({
             <p align="justify">Nunc vitae luctus ligula. Etiam vulputate semper lorem quis gravida. Donec nec aliquam ipsum. Nulla feugiat feugiat erat et consequat. Sed hendrerit molestie ante, sit amet porta leo porta ut. Praesent adipiscing turpis at nisl dapibus vehicula.</p>
             <div class="cleaner"></div>
         </div>
-        
+
         <h3>Comments</h3>
-                        
+
             <div id="comment_section">
                 <ol class="comments first_level">
-                        
+
                     <li>
                         <div class="comment_box commentbox1">
-                                    
+
                             <div class="gravatar">
                                 <img class="image_frame" src="images/avator.png" alt="author 6" />
                             </div>
-                                
+
                             <div class="comment_text">
                                 <div class="comment_author">Steven <span class="date">November 22, 2048</span> <span class="time">10:15 pm</span></div>
                                     <p>Praesent risus mauris, feugiat condimentum commodo vel, dignissim auctor urna. Vivamus ullamcorper lectus sed diam iaculis sed facilisis enim sollicitudin. Pellentesque sodales fringilla eros, a ultricies sapien porta ut. Maecenas mi mi, commodo eget tincidunt in, mattis eget nisl.</p>
 									<div class="reply"><a href="#">Reply</a></div>
                                 </div>
                                 <div class="cleaner"></div>
-                        </div>                        
-                            
+                        </div>
+
                     </li>
-                        
+
                     <li>
-                        
+
                         <ol class="comments">
-                            
+
                             <li>
                                 <div class="comment_box commentbox2">
-                                        
+
                                     <div class="gravatar">
                                         <img class="image_frame" src="images/avator.png" alt="author 6" />
                                     </div>
@@ -131,19 +128,19 @@ ddsmoothmenu.init({
                                         <p>Fusce consequat nulla dapibus mi ullamcorper nec adipiscing neque commodo. Vestibulum nunc arcu, laoreet id rhoncus vel, sollicitudin nec dolor.</p>
                                         <div class="reply"><a href="#">Reply</a></div>
                                     </div>
-                                        
+
                                     <div class="cleaner"></div>
-                                </div>  
-                                    
+                                </div>
+
 							</li>
-                                    
+
                             <li>
-                            
+
                                 <ol class="comments">
-                                    
+
                                     <li>
                                         <div class="comment_box commentbox1">
-                                                
+
                                             <div class="gravatar">
 												<img class="image_frame" src="images/avator.png" alt="author 6" />
 											</div>
@@ -152,22 +149,22 @@ ddsmoothmenu.init({
                                                 <p>Vestibulum ac leo purus, a auctor lacus. Quisque nibh erat, luctus quis malesuada cursus, sodales ac justo. Sed feugiat mi id mi rutrum dapibus.</p>
                                                 <div class="reply"><a href="#">Reply</a></div>
                                             </div>
-                                                    
+
                                             <div class="cleaner"></div>
-                                        </div>   
-                                                
+                                        </div>
+
                                     </li>
-                                    
+
                                 </ol>
-                        
+
                         	</li>
                         </ol>
-                                
+
 					</li>
-                        
+
                     <li>
                         <div class="comment_box commentbox1">
-                                         
+
                             <div class="gravatar">
                                 <img class="image_frame" src="images/avator.png" alt="author 6" />
                             </div>
@@ -176,15 +173,15 @@ ddsmoothmenu.init({
                                 <p>Fusce quis enim risus. Ut consectetur urna ac massa aliquet lobortis. Nunc tellus neque, condimentum vitae elementum quis, luctus nec sem.</p>
                                 <div class="reply"><a href="#">Reply</a></div>
                             </div>
-                                
+
                             <div class="cleaner"></div>
-                        </div>     
-                            
+                        </div>
+
                     </li>
-                        
+
                     <li>
                         <div class="comment_box commentbox1">
-                                    
+
                             <div class="gravatar">
                                 <img class="image_frame" src="images/avator.png" alt="author 6" />
                             </div>
@@ -193,14 +190,14 @@ ddsmoothmenu.init({
                                 <p>Maecenas dolor eros, consequat nec ultricies id, hendrerit in urna. Praesent ullamcorper condimentum justo ut varius. Nam dui lectus, varius sed eleifend eu, vehicula non odio. </p>
                                 <div class="reply"><a href="#">Reply</a></div>
                             </div>
-                                
+
                             <div class="cleaner"></div>
-                        </div>   
-                            
+                        </div>
+
                     </li>
-                        
+
                 </ol>
-                <div class="cleaner h20"></div>    
+                <div class="cleaner h20"></div>
           		<div class="pagging">
                     <ul>
                         <li><a href="http://www.templatemo.com" target="_parent">Previous</a></li>
@@ -212,15 +209,15 @@ ddsmoothmenu.init({
                         <li><a href="http://www.templatemo.com/page/6" target="_parent">6</a></li>
                         <li><a href="http://www.templatemo.com/page/7" target="_parent">Next</a></li>
                     </ul>
-                </div>    
-                    
                 </div>
-                
+
+                </div>
+
                 <div class="cleaner h20"></div>
-                
+
                 <div id="comment_form">
                     <h3>Leave your comment</h3>
-                    
+
                     <form action="#" method="get">
                         <div class="form_row">
                             <label>Name (* required )</label><br />
@@ -237,7 +234,7 @@ ddsmoothmenu.init({
                         <input type="submit" name="Submit" value="Submit" class="submit_btn" />
                     </form>
             	</div>
-        
+
         <div class="cleaner"></div>
     </div> <!-- end of main -->
 </div> <!-- end of main wrapper -->
@@ -249,11 +246,11 @@ ddsmoothmenu.init({
         <a href="#"><img src="images/youtube.png" title="Youtube" alt="Youtube"/></a>
         <a href="#"><img src="images/feed.png" title="RSS" alt="RSS"/></a>
 	</div>
-	
+
       <div class="col col_32 copyright no_margin_righ">
         Copyright © 2013 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
     </div>
-	
+
     <div class="cleaner"></div>
 </div> <!-- end of footer -->
 

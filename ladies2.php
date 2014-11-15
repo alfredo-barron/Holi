@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'conexion.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -38,11 +38,11 @@ ddsmoothmenu.init({
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script> 
-<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
 <link rel="shortcut icon" href="images/estrella.png">
 
-<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script>
 
 </head>
 <body>
@@ -63,7 +63,7 @@ ddsmoothmenu.init({
                     <ul>
                         <li><a href="ladies.php">Damas</a></li>
                         <li><a href="mens.php">Caballeros</a></li>
-                        <li><span class="bottom"><a href="http://es.photohq.com" title="Haga clic aquí para abrir"  target="_blank"><img src="images/templatemo_menu_bottom.png" alt="Haga clic aquí para abrir from es.photohq.com" title="Haga clic aquí para abrir" /></a></span></li>
+
                     </ul>
                 </li>
                 <li><a href="about.php"><span></span>Diseños</a>
@@ -78,8 +78,6 @@ ddsmoothmenu.init({
                 </li>
                 <li><a href="blog.php">Compras</a></li>
                 <li><a href="contact.php">Contacto</a></li>
-                 <div align="center"> <a href="./blog.php" class="carrito" title="Ver carrito de compras">
-                <img src="./imagenes/carrito.png"></a></div>
             </ul>
             <br style="clear: left" />
         </div> <!-- end of menu -->
@@ -90,11 +88,12 @@ ddsmoothmenu.init({
 
 <div id="templatemo_main_wrapper">
 	<div id="templatemo_main">
-    	
+
         <div class="gallery_box">
             <?php
-                $re=mysql_query("select * from productos where id=7")or die(mysql_error());
-                while ($f=mysql_fetch_array($re)){
+               $query = "SELECT * FROM productos WHERE id=7";
+                $result = pg_query($conn,$query);
+                while ($f=pg_fetch_array($result)){
                  ?>
         	<div class="col col_2">
             <a href="./productos/<?php echo $f['imagen'];?>" rel="lightbox[portfolio]"><img src="./productos/<?php echo $f['imagen'];?>" width= "300 px" height= "300 px" alt="Image 01" class="image_frame" /></a>
@@ -114,8 +113,9 @@ ddsmoothmenu.init({
         </div>
         <div class="gallery_box no_margin_right">
         	 <?php
-                $re=mysql_query("select * from productos where id=8")or die(mysql_error());
-                while ($f=mysql_fetch_array($re)){
+               $query = "SELECT * FROM productos WHERE id=8";
+                $result = pg_query($conn,$query);
+                while ($f=pg_fetch_array($result)){
                  ?>
             <div class="col col_2">
             <a href="./productos/<?php echo $f['imagen'];?>" rel="lightbox[portfolio]"><img src="./productos/<?php echo $f['imagen'];?>" width= "300 px" height= "300 px" alt="Image 01" class="image_frame" /></a>
@@ -135,8 +135,9 @@ ddsmoothmenu.init({
         </div>
         <div class="gallery_box">
             <?php
-                $re=mysql_query("select * from productos where id=9")or die(mysql_error());
-                while ($f=mysql_fetch_array($re)){
+                $query = "SELECT * FROM productos WHERE id=9";
+                $result = pg_query($conn,$query);
+                while ($f=pg_fetch_array($result)){
                  ?>
             <div class="col col_2">
             <a href="./productos/<?php echo $f['imagen'];?>" rel="lightbox[portfolio]"><img src="./productos/<?php echo $f['imagen'];?>" width= "300 px" height= "300 px" alt="Image 01" class="image_frame" /></a>
@@ -153,7 +154,7 @@ ddsmoothmenu.init({
                  ?>
 			</div>
             <div class="cleaner"></div>
-        </div>        
+        </div>
         <div class="cleaner"></div>
         <div class="pagging">
             <ul>
@@ -166,23 +167,19 @@ ddsmoothmenu.init({
                 <li><a href="ladies3.php" target="_parent">Siguiente</a></li>
             </ul>
         </div>
-        
+
         <div class="cleaner"></div>
     </div> <!-- end of main -->
 </div> <!-- end of main wrapper -->
 <div id="templatemo_footer">
 	<div class="col col_3">
-        <a href="#"><img src="images/facebook.png" title="Facebook" alt="Facebook" /></a>
-        <a href="#"><img src="images/flickr.png" title="Flickr" alt="Flickr"/></a>
-        <a href="#"><img src="images/twitter.png" title="Twitter" alt="Twitter"/></a>
-        <a href="#"><img src="images/youtube.png" title="Youtube" alt="Youtube"/></a>
-        <a href="#"><img src="images/feed.png" title="RSS" alt="RSS"/></a>
+        <a href="https://www.facebook.com/holiventa"><img src="images/facebook.png" title="Facebook" alt="Facebook" /></a>
 	</div>
-	
+
      <div class="col col_32 copyright no_margin_righ">
-        Copyright © 2013 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
+        Copyright © 2014 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
     </div>
-	
+
     <div class="cleaner"></div>
 </div> <!-- end of footer -->
 

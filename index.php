@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Holi, Homepage</title>
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <meta name="keywords" content="accordion theme, homepage, templatemo, free template, jquery kwicks, slider" />
 <meta name="description" content="Accordion Theme, homepage, free CSS template from templatemo.com" />
+
+
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
-
 <link rel="shortcut icon" href="images/estrella.png">
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -65,7 +65,7 @@ ddsmoothmenu.init({
                     <ul>
 						<li><a href="ladies.php">Damas</a></li>
                         <li><a href="mens.php">Caballeros</a></li>
-                        <li><span class="bottom"><a href="http://es.photohq.com" title="Haga clic aquí para abrir"  target="_blank"><img src="images/templatemo_menu_bottom.png" alt="Haga clic aquí para abrir from es.photohq.com" title="Haga clic aquí para abrir" /></a></span></li>
+
                     </ul>
                 </li>
                 <li><a href="about.php"><span></span>Diseños</a>
@@ -80,8 +80,6 @@ ddsmoothmenu.init({
 				</li>
 				<li><a href="blog.php">Compras</a></li>
 				<li><a href="contact.php">Contacto</a></li>
-                <div align="center"> <a href="./blog.php" class="carrito" title="Ver carrito de compras">
-                <img src="./imagenes/carrito.png"></a></div>
             </ul>
             <br style="clear: left" />
         </div> <!-- end of menu -->
@@ -107,14 +105,14 @@ ddsmoothmenu.init({
             <p>Los cat&aacute;logos con los mejores bolsos para damas.</p>
             <a href="ladies.html">M&aacute;s</a>
         </div>
-        
+
         <div class="col col_3 hp_post">
         	<a href="mens.php"><img src="images/billetera.png" width= "165 px" height= "155 px" alt="Presentation"/></a>
         	<a href="mens.php"><h4>Billeteras</h4></a>
             <p>Los cat&aacute;logos con las mejores billeteras para caballeros</p>
             <a href="mens.php">M&aacute;s</a>
         </div>
-        
+
         <div class="col col_3 hp_post no_margin_righ">
         	<a href="about.php"><img src="images/diseno.jpg" width= "160 px" height= "120 px" alt="Wallet"/></a>
         	<a href="about.php"><h4>Personaliza tu cartera</h4></a>
@@ -137,18 +135,20 @@ ddsmoothmenu.init({
                 <li class="flow">Sed adipiscing mi dictum semper</li>
                 <li class="flow nomr">Ut tempus vehicula dolor</li>
             </ul> -->
-           <div align="center"><img src="images/holirun.png" width="300px" ></div> 
+           <div align="center"><img src="images/holirun.png" width="300px" ></div>
 		</div>
         <div class="col col_3 no_margin_righ">
             <div class="rp_pp">
                <form method="POST">
-                   <label for="author">E-mail:</label> <input type="text" id="email" name="email" class="required input_field" />
+                   <label for="author">Usuario:</label> <input type="text" id="author" name="author" class="required input_field" />
                     <div class="cleaner h10"></div>
-                                                    
-                    <label for="email">Contraseña:</label> <input type="password" class="validate-email required input_field" name="password" id="password" />
+
+                    <label for="email">Contraseña:</label> <input type="text" class="required input_field" name="password" id="password" />
                     <div class="cleaner h10"></div>
-                    <div align="center"><button>Ingresar</button> <button>Registrarse</button></div>
+                    <input type="submit" value="Entrar" id="submit" name="submit" class="submit_btn float_l" />
+                    <input type="reset" value="Registrarse" id="reset" name="reset" class="submit_btn float_r" />
                </form>
+               <br /><br />
             </div>
         	<h3>Novedades</h3>
             <div class="rp_pp">
@@ -172,17 +172,13 @@ ddsmoothmenu.init({
 </div> <!-- end of main wrapper -->
 <div id="templatemo_footer">
 	<div class="col col_3">
-        <a href="#"><img src="images/facebook.png" title="Facebook" alt="Facebook" /></a>
-        <a href="#"><img src="images/flickr.png" title="Flickr" alt="Flickr"/></a>
-        <a href="#"><img src="images/twitter.png" title="Twitter" alt="Twitter"/></a>
-        <a href="#"><img src="images/youtube.png" title="Youtube" alt="Youtube"/></a>
-        <a href="#"><img src="images/feed.png" title="RSS" alt="RSS"/></a>
+        <a href="https://www.facebook.com/holiventa"><img src="images/facebook.png" title="Facebook" alt="Facebook" /></a>
 	</div>
-	
+
     <div class="col col_32 copyright no_margin_righ">
-        Copyright © 2013 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
+        Copyright © 2014 <a href="https://www.facebook.com/holiventa">HOLI</a> | Designed by <a href="https://www.facebook.com/BarronPro" target="_parent">Barr&oacute;n PRO</a>
 	</div>
-	
+
     <div class="cleaner"></div>
 </div> <!-- end of footer -->
 
